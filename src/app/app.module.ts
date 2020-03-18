@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DirectivesModule } from './directives/directives.module';
 import { Material2Module } from './material2.module';
 
+
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
@@ -15,6 +16,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 import { WorkingComponent } from './working/working.component';
+import { RangesComponent } from './ranges/ranges.component';
 
 
 
@@ -28,7 +30,8 @@ import { WorkingComponent } from './working/working.component';
     BlogComponent,
     ContactComponent,
     ContactDialogComponent,
-    WorkingComponent
+    WorkingComponent,
+    RangesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { WorkingComponent } from './working/working.component';
     FlexLayoutModule,
     DirectivesModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,    
   ],
   providers: [],
   entryComponents: [ ContactDialogComponent ],

@@ -14,6 +14,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
+import { WorkingComponent } from './working/working.component';
 
 
 
@@ -26,7 +27,8 @@ import { ContactDialogComponent } from './contact-dialog/contact-dialog.componen
     PricingComponent,
     BlogComponent,
     ContactComponent,
-    ContactDialogComponent
+    ContactDialogComponent,
+    WorkingComponent
   ],
   imports: [
     BrowserModule,

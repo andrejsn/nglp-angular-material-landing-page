@@ -1,0 +1,88 @@
+<section
+  id="working"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container working-card">
+    <div
+      class="working-section working-heading mat-typography"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">
+          (how we are) Working
+        </h2>
+      </div>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          Long-term relationship to the client are the basis of our work
+        </h3>
+      </div>
+    </div>
+
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxLayoutWrap="nowrap"
+      fxLayoutGap="30px"
+      fxLayoutGap.sm="8px"
+    >
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/img/01.jpg" />
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Work with the client
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Work with the client - is the foundation of any business. The
+              client comes to us for solutions to their problems. Does not
+              matter to us: the creation of new solutions or support already
+              existing. For us it is important that we can provide the product
+              with which our customer can save or earn.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/img/02.jpg" />
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Project thinking
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              For us, thinking about a project is not limited to any framework.
+              We offer all kinds of solutions. Choosing the best solution is the
+              most difficult and crucial step, a step on which a lot depends.
+              Our analysts have extensive experience with a variety of projects,
+              and will always offer the best solution!
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/img/03.jpg" />
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Project Support
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              There comes a time when the project moves from the development and
+              testing stage to the maintenance stage. This means that we
+              continue to correct, optimize and enhance the product, following
+              the customer's requirements. We also supplement the documentation
+              for users and promptly inform them about the new versions.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

@@ -22,3 +22,18 @@
 .ranges-heading h3{
   font-size: 22px;
 }
+
+.positionRelative{
+  position: relative;
+
+}
+
+.percentageValue {
+  left: -10px;
+  top: 40%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}

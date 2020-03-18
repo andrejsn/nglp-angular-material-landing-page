@@ -1,54 +1,115 @@
-<section id="ranges" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
+<section
+  id="ranges"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
   <div class="container ranges-card">
-
-    <div class="ranges-section ranges-heading mat-typography" fxLayout="column" fxLayoutAlign="center center">
-        <div>
-        <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Ranges</h2>
-        </div>
-        <div>
-        <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.</h3>
-        </div>
-    </div>
-
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
-      
-      <div fxFlex="33.33" [about]>
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/img/1.jpg">
-          <mat-card-content>
-            <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
-            <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
-            </p>
-          </mat-card-content>
-        </mat-card>
+    <div
+      class="ranges-section ranges-heading mat-typography"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">Ranges</h2>
       </div>
-
-      <div fxFlex="33.33" [about]>
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/img/2.jpg">
-          <mat-card-content>
-            <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
-            <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
-            </p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-      <div fxFlex="33.33" [about]>
-        <mat-card class="p-0 m-0">
-          <img mat-card-image src="assets/img/3.jpg">
-          <mat-card-content>
-            <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Project Title</h5>
-            <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
-              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
-            </p>
-          </mat-card-content>
-        </mat-card>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+        Activities in the percentage ratio
+        </h3>
       </div>
     </div>
-    
 
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxLayoutWrap="nowrap"
+      fxLayoutGap="30px"
+      fxLayoutGap.sm="8px"
+    >
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <div class="positionRelative">
+            <round-progress
+              [max]="100"
+              [current]="20"
+              color="#f57c00"
+              [radius]="120"
+              [responsive]="false"
+            >
+            </round-progress>
+            <div class="percentageValue">
+              20 %
+            </div>
+          </div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Support
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+              Doloribus numquam quis.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <div class="positionRelative">
+            <round-progress
+              [max]="100"
+              [current]="45"
+              color="#f57c00"
+              [clockwise]="false"
+              [radius]="120"
+              [responsive]="false"
+            >
+            </round-progress>
+            <div class="percentageValue">
+              45 %
+            </div>
+          </div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Testing
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+              Doloribus numquam quis.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0">
+          <div class="positionRelative">
+            <round-progress
+              [max]="100"
+              [current]="35"
+              color="#f57c00"
+              [clockwise]="true"
+              [radius]="120"
+              [responsive]="false"
+            >
+            </round-progress>
+            <div class="percentageValue">
+              35 %
+            </div>
+          </div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Development
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+              Doloribus numquam quis.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
   </div>
 </section>

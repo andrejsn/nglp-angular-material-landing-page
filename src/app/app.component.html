@@ -4,7 +4,7 @@
       <mat-nav-list class="navigation-list" fxLayout="row" fxShow="false" fxShow.gt-xs="true">
           <a mat-list-item href="#about">About us</a>
           <a mat-list-item href="#working">Working</a>
-          <a mat-list-item href="#ranges">Ranges</a>
+          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">Ranges</a>
           <a mat-list-item href="#pricing">Pricing</a>
           <a mat-list-item href="#gallery">Gallery</a>
           <a mat-list-item href="#contact">Contact</a>
@@ -23,7 +23,7 @@
           <a id="mobilelogo" class="logo" fxShow="true" fxShow.gt-xs="false" href="#"><img src="assets/img/logo.png"></a>
           <a mat-list-item href="#about">About us</a>
           <a mat-list-item href="#working">Working</a>
-          <a mat-list-item href="#ranges">Ranges</a>
+          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">Ranges</a>
           <a mat-list-item href="#pricing">Pricing</a>
           <a mat-list-item href="#gallery">Gallery</a>
           <a mat-list-item href="#contact">Contact</a>
@@ -36,7 +36,7 @@
       <app-about></app-about>
       <!--app-portfolio></app-portfolio-->
       <app-working></app-working>
-      <app-ranges></app-ranges>
+      <app-ranges #ranges></app-ranges>
       <app-pricing></app-pricing>
       <app-blog></app-blog>
       <app-contact></app-contact>

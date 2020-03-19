@@ -18,6 +18,18 @@ export class RangesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    this.resetRanges();
+  }
+
+  delay(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  resetRanges() {
+    this.support = 0;
+    this.testing = 0;
+    this.development = 0;
+
     (async () => {
       do {
         this.support++;
@@ -37,9 +49,5 @@ export class RangesComponent implements OnInit {
         await this.delay(50);
       } while (this.testing < this.testing_);
     })();
-  }
-
-  delay(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }

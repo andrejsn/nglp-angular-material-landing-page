@@ -1,9 +1,14 @@
-table {
-  width: 100%;
+.pricing-row{
+	margin-top: 20px;
 }
 
-tr.mat-footer-row {
-  font-weight: bold;
+.pricing-button{
+	margin-top: 10px;
+}
+
+.pricing-section{
+  text-align: center;
+  padding-top: 100px;
 }
 
 .pricing-heading{
@@ -18,6 +23,3 @@ tr.mat-footer-row {
   font-size: 22px;
 }
 
-.pricing-section{
-  text-align: center;
-}

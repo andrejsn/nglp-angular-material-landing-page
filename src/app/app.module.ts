@@ -17,6 +17,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { ContactDialogComponent } from "./contact-dialog/contact-dialog.component";
 import { WorkingComponent } from "./working/working.component";
 import { RangesComponent } from "./ranges/ranges.component";
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RangesComponent } from "./ranges/ranges.component";
     ContactComponent,
     ContactDialogComponent,
     WorkingComponent,
-    RangesComponent
+    RangesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

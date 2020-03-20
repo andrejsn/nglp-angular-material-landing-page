@@ -6,6 +6,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { DirectivesModule } from "./directives/directives.module";
 import { Material2Module } from "./material2.module";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
+import {Angular2ImageGalleryModule} from "angular2-image-gallery";
 
 import { AppComponent } from "./app.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
@@ -42,6 +43,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     FormsModule,
     ReactiveFormsModule,
     RoundProgressModule,
+    Angular2ImageGalleryModule
   ],
   providers: [],
   entryComponents: [ContactDialogComponent],

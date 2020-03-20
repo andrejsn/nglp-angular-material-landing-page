@@ -7,7 +7,7 @@
  */
 
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, Inject, OnInit } from '@angular/core';
 import { SE } from './directives/scroll.directive';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
@@ -36,6 +36,7 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+    
   }
 
   public detectScroll(event: SE) {
@@ -58,6 +59,11 @@ export class AppComponent implements OnDestroy {
     const dialogRef = this.dialog.open(ContactDialogComponent, {
       width: '250px'
     });
+  }
+
+  // used for gallery display only
+  setzIndex(z:string){
+    document.getElementById('navi').style.zIndex = z;
   }
 
   setToggleOn(){

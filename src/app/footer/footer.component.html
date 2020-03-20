@@ -1,3 +1,61 @@
-<p>
-  footer works!
-</p>
+<section
+  id="footer"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container footer-card">
+    <div
+      class="footer-section footer-heading mat-typography"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }"></h2>
+      </div>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          Legal information about us
+        </h3>
+      </div>
+    </div>
+
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxLayoutWrap="nowrap"
+      fxLayoutGap="30px"
+      fxLayoutGap.sm="8px"
+    >
+      <div fxFlex="50" [about]>
+        <mat-card class="p-0 m-0">
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              PAMATDATI
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Nosaukums: SIA "ADVENTA"<br />
+              Reģistrācijas numurs, datums: 40103728096, 05.11.2013<br />
+              PVN maksātāja numurs: LV40103728096<br />
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="50" [about]>
+        <mat-card class="p-0 m-0">
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              JURIDISKĀ ADRESE
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Ūnijas iela 68 k-1 - 3, Rīga, LV-1084<br>
+              E-pasts: email@adventa.lv<br>
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

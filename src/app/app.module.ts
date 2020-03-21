@@ -7,6 +7,10 @@ import { DirectivesModule } from "./directives/directives.module";
 import { Material2Module } from "./material2.module";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
 import {Angular2ImageGalleryModule} from "angular2-image-gallery";
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from "@angular/common/http";
+import { environment } from "src/environments/environment";
 
 import { AppComponent } from "./app.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
@@ -20,6 +24,13 @@ import { WorkingComponent } from "./working/working.component";
 import { RangesComponent } from "./ranges/ranges.component";
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { LanguageDialogComponent } from './language-dialog/language-dialog.component'
+
+
+export function HttpLoaderFactory(httpClient: HttpClient){
+  return new TranslateHttpLoader(httpClient, environment.production + '/assets/i18n/', '-lang.json');
+}
+
 
 @NgModule({
   declarations: [
@@ -34,21 +45,28 @@ import { FooterComponent } from './footer/footer.component';
     WorkingComponent,
     RangesComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,  
+    LanguageDialogComponent,      
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     Material2Module,
     FlexLayoutModule,
     DirectivesModule,
     FormsModule,
     ReactiveFormsModule,
     RoundProgressModule,
-    Angular2ImageGalleryModule
+    Angular2ImageGalleryModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
   ],
   providers: [],
-  entryComponents: [ContactDialogComponent],
+  entryComponents: [ContactDialogComponent, LanguageDialogComponent,],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

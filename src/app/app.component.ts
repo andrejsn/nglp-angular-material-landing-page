@@ -11,6 +11,7 @@ import { ChangeDetectorRef, Component, OnDestroy, Inject, OnInit } from '@angula
 import { SE } from './directives/scroll.directive';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
+import { LanguageDialogComponent} from './language-dialog/language-dialog.component';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -21,6 +22,8 @@ import { DOCUMENT } from '@angular/common';
 export class AppComponent implements OnDestroy {
 
   contactFabButton: any;
+  languageFabButton: any;
+
   bodyelement: any;
   sidenavelement: any;
 
@@ -55,8 +58,14 @@ export class AppComponent implements OnDestroy {
     
   }
 
-  openDialog(): void {
+  openContactDialog(): void {
     const dialogRef = this.dialog.open(ContactDialogComponent, {
+      width: '250px'
+    });
+  }
+
+  openLanguageDialog(): void {
+    const dialogRef = this.dialog.open(LanguageDialogComponent, {
       width: '250px'
     });
   }
@@ -72,6 +81,8 @@ export class AppComponent implements OnDestroy {
     this.bodyelement.classList.add("scrollOff");
     this.contactFabButton = document.getElementById('contact-fab-button');
     this.contactFabButton.style.display = "none";
+    this.languageFabButton = document.getElementById('language-fab-button');
+    this.languageFabButton.style.display = "none";
     
   }
 
@@ -81,7 +92,8 @@ export class AppComponent implements OnDestroy {
     this.bodyelement.classList.remove("scrollOff");
     this.contactFabButton = document.getElementById('contact-fab-button');
     this.contactFabButton.removeAttribute("style");
-
+    this.languageFabButton = document.getElementById('language-fab-button');
+    this.languageFabButton.removeAttribute("style");
   }
 
 

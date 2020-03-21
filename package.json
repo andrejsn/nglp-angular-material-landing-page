@@ -24,6 +24,8 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@ks89/angular-modal-gallery": "^7.2.5",
+    "@ngx-translate/core": "^10.0.2",
+    "@ngx-translate/http-loader": "^3.0.1",
     "@types/mousetrap": "^1.6.3",
     "angular-svg-round-progressbar": "^3.0.1",
     "angular2-image-gallery": "^8.0.0",

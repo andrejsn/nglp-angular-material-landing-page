@@ -1,16 +1,8 @@
-mat-icon{
-	font-weight: bold;
+::ng-deep .mat-select-content {
+  background-color: #ff6d00c7;
+  font-size: 1.2em;
 }
 
-.language-dialog-title{
-	text-align: center;
-}
-
-.dialog-action{
-	width: 100%;
-	margin-top: 20px;
-}
-
-.right-button{
-	margin-left: 50px;
+::ng-deep .mat-select-value {
+  font-size: 1.5em;
 }

@@ -1,6 +1,17 @@
+<div>
+  <mat-form-field>
+    <mat-select placeholder="Language" [ngModel]="translate.currentLang" (selectionChange)="translate.use($event.value)">
+        <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang">
+            {{ lang }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
 
-  <div>
-    <h5 class="language-dialog-title mat-title">Language:</h5>
+  
 
-  </div>
+      <!-- <select #langSelect (change)="translate.use(langSelect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+      </select> -->
 
+    
+</div>

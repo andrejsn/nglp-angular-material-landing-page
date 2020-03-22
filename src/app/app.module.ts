@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { DirectivesModule } from "./directives/directives.module";
 import { Material2Module } from "./material2.module";
+import { MatSelectModule } from "@angular/material";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
 import {Angular2ImageGalleryModule} from "angular2-image-gallery";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -51,6 +52,7 @@ export function HttpLoaderFactory(httpClient: HttpClient){
   imports: [
     BrowserModule,
     Material2Module,
+    MatSelectModule,
     FlexLayoutModule,
     DirectivesModule,
     FormsModule,

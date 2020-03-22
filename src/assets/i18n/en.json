@@ -58,7 +58,7 @@
 		"title": "Gallery"
 	},
 	"header": {
-		"greeting": "We greet you"
+		"greeting": "We greet you ツ"
 	},
 	"pricing": {
 		"development": {
@@ -109,16 +109,16 @@
 	},
 	"working": {
 		"client": {
-			"text": "Work with the client - is the foundation of any business. ...",
+			"text": "Work with the client - is the foundation of any business. The client comes to us for solutions to their problems. Does not matter to us: the creation of new solutions or support already existing. For us it is important that we can provide the product with which our customer can save or earn.",
 			"title": "Work with the client"
 		},
 		"project": {
-			"text": "For us, thinking about a project is not limited to any framework. ...",
+			"text": "For us, thinking about a project is not limited to any framework. We offer all kinds of solutions. Choosing the best solution is the most difficult and crucial step, a step on which a lot depends. Our analysts have extensive experience with a variety of projects, and will always offer the best solution!ле",
 			"title": "Project thinking"
 		},
 		"subtitle": "Long-term relationship to the client are the basis of our work",
 		"support": {
-			"text": "There comes a time when the project moves from the development and testing stage to the maintenance stage. ...",
+			"text": "There comes a time when the project moves from the development and testing stage to the maintenance stage. This means that we continue to correct, optimize and enhance the product, following the customer's requirements. We also supplement the documentation for users and promptly inform them about the new versions.",
 			"title": "Project Support"
 		},
 		"title": "(how we are) Working"

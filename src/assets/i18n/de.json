@@ -39,7 +39,7 @@
 			"email_valid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
 			"name": "Name ist",
 			"phone": "Telefon ist",
-			"required": "Erforderlich"
+			"required": "erforderlich"
 		},
 		"placeholder": {
 			"email": "Email",
@@ -58,7 +58,7 @@
 		"title": "Galerie"
 	},
 	"header": {
-		"greeting": "Wir begrüßen Sie"
+		"greeting": "Wir begrüßen Sie ツ"
 	},
 	"pricing": {
 		"development": {
@@ -109,16 +109,16 @@
 	},
 	"working": {
 		"client": {
-			"text": "Arbeit mit dem Kunden - ist die Grundlage jedes Geschäfts. ...",
+			"text": "Arbeit mit dem Kunden - ist die Grundlage jedes Geschäfts. Der Kunde kommt zu uns, um Lösungen für seine Probleme zu finden. Für uns ist das nicht wichtig: die Schaffung neuer Lösungen oder die Unterstützung bereits vorhandener. Für uns ist es wichtig, dass wir das Produkt bereitstellen können, mit dem unser Kunde sparen oder verdienen kann.",
 			"title": "Arbeiten Sie mit dem Kunden"
 		},
 		"project": {
-			"text": "Für uns ist das Nachdenken über ein Projekt nicht auf einen Rahmen beschränkt. ...",
-			"title": ""
+			"text": "Für uns ist das Nachdenken über ein Projekt nicht auf einen Rahmen beschränkt. Wir bieten alle Arten von Lösungen. Die Wahl der besten Lösung ist der schwierigste und wichtigste Schritt, von dem vieles abhängt. Unsere Analysten verfügen über umfangreiche Erfahrung mit einer Vielzahl von Projekten und bieten immer die beste Lösung!",
+			"title": "Projektdenken"
 		},
 		"subtitle": "Langfristige Beziehungen zum Kunden sind die Grundlage unserer Arbeit",
 		"support": {
-			"text": "Es kommt eine Zeit, in der das Projekt von der Entwicklungs- und Testphase in die Wartungsphase übergeht. ...",
+			"text": "Es kommt eine Zeit, in der das Projekt von der Entwicklungs- und Testphase in die Wartungsphase übergeht. Dies bedeutet, dass wir das Produkt weiterhin gemäß den Anforderungen des Kunden korrigieren, optimieren und verbessern. Wir ergänzen auch die Dokumentation für Benutzer und informieren sie umgehend über die neuen Versionen.",
 			"title": "Projektunterstützung"
 		},
 		"title": "(wie wir sind) Arbeiten"

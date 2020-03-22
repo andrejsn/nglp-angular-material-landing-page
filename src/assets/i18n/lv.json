@@ -39,7 +39,7 @@
 			"email_valid": "Lūdzu ievadiet derīgu e-pasta adresi",
 			"name": "Vārds ir",
 			"phone": "Telefons ir",
-			"required": "Obligāts"
+			"required": "obligāts"
 		},
 		"placeholder": {
 			"email": "E-pasts",
@@ -58,7 +58,7 @@
 		"title": "Galerija"
 	},
 	"header": {
-		"greeting": "Mēs sveicam jūs"
+		"greeting": "Mēs sveicam jūs ツ"
 	},
 	"pricing": {
 		"development": {
@@ -109,16 +109,16 @@
 	},
 	"working": {
 		"client": {
-			"text": "Darbs ar klientu - ir jebkura biznesa pamats. ...",
+			"text": "Darbs ar klientu - ir jebkura biznesa pamats. Klients pie mums meklē risinājumus viņu problēmām. Mums nav nozīmes: jaunu risinājumu radīšana vai jau esošs atbalsts. Mums ir svarīgi, lai mēs varētu piedāvāt produktu, kuru mūsu klients var ietaupīt vai nopelnīt.",
 			"title": "Darbs ar klientu"
 		},
 		"project": {
-			"text": "Mums domāt par projektu neaprobežojas tikai ar jebkuru ietvaru. ...",
-			"title": ""
+			"text": "Mums domāt par projektu neaprobežojas tikai ar jebkuru ietvaru. Mēs piedāvājam visa veida risinājumus. Labākā risinājuma izvēle ir visgrūtākais un izšķirošākais solis, no kura ir atkarīgs daudz. Mūsu analītiķiem ir liela pieredze ar dažādiem projektiem, un viņi vienmēr piedāvās labāko risinājumu!",
+			"title": "Projekta domāšana"
 		},
 		"subtitle": "Ilgtermiņa attiecības ar klientu ir mūsu darba pamatā",
 		"support": {
-			"text": "Pienāk laiks, kad projekts pāriet no izstrādes un testēšanas posma uz apkopes posmu. ...",
+			"text": "Pienāk laiks, kad projekts pāriet no izstrādes un testēšanas posma uz apkopes posmu. Tas nozīmē, ka mēs turpinām labot, optimizēt un uzlabot produktu, ievērojot klienta prasības. Mēs arī papildinām dokumentāciju lietotājiem un nekavējoties informējam viņus par jaunajām versijām.",
 			"title": "Projekta atbalsts"
 		},
 		"title": "(kā mums klājas) Darbs"

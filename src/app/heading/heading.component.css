@@ -23,10 +23,12 @@
 .heading-button-right {
   margin-left: 10px;
 }
-
+ 
 .heading-background-image {
   padding-top: 150px;
   padding-bottom: 40px;
   background-size: cover;
   background-image: url(../../assets/images/background1.jpg);
+  background-position-y: center;
+    background-position-x: center;
 }

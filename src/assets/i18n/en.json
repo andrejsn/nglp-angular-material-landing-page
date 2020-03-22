@@ -1,0 +1,126 @@
+{
+	"about": {
+		"crm": {
+			"text": "Proprietary software to optimize customer interactions",
+			"title": "Implementation of its CRM in 2020"
+		},
+		"software": {
+			"text": "Development of programs according to customer specifications",
+			"title": "Software development since 2018"
+		},
+		"support": {
+			"text": "We offer technical support for almost any project",
+			"title": "IT Support since 2015"
+		},
+		"test": {
+			"text": "Writing simple test cases for web application",
+			"title": "Test management since 2013"
+		},
+		"text": "about text",
+		"title": "(briefly) About us"
+	},
+	"app": {
+		"about": "About us",
+		"contact": "Contact",
+		"gallery": "Gallery",
+		"pricing": "Pricing",
+		"ranges": "Ranges",
+		"working": "Working"
+	},
+	"contact": {
+		"button": "Contact Us",
+		"enter": {
+			"email": "Please enter your email",
+			"name": "Please enter your name",
+			"phone": "Please enter your phone"
+		},
+		"error": {
+			"email": "Email is",
+			"email_valid": "Please enter a valid email address",
+			"name": "Name is",
+			"phone": "Phone is",
+			"required": "required"
+		},
+		"placeholder": {
+			"email": "Email",
+			"name": "Name",
+			"phone": "Phone"
+		},
+		"subtitle": "Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
+		"title": "Contact Us (under construction :-/)"
+	},
+	"footer": {
+		"subtitle": "Legal information about us",
+		"title": "--- FOOTER ---"
+	},
+	"gallery": {
+		"subtitle": "(((not) simple) Pictures =)",
+		"title": "Gallery"
+	},
+	"header": {
+		"greeting": "We greet you"
+	},
+	"pricing": {
+		"development": {
+			"line": {
+				"1": "New projects",
+				"2": "Reverse engineering",
+				"3": "Compilation of documentation"
+			},
+			"price": "from 55€ per hour",
+			"title": "Development"
+		},
+		"subtitle": "The price depends on the specific of project",
+		"support": {
+			"line": {
+				"1": "Request processing",
+				"2": "Employee training\n",
+				"3": "Availability 24/7"
+			},
+			"price": "from 30€ per hour",
+			"title": "Support"
+		},
+		"testing": {
+			"line": {
+				"1": "Functional",
+				"2": "Load testing",
+				"3": "Security"
+			},
+			"price": "from 45€ per hour",
+			"title": "Testing"
+		},
+		"title": "Pricing"
+	},
+	"ranges": {
+		"development": {
+			"text": "Software development or improvement of existing.",
+			"title": "Development"
+		},
+		"subtitle": "Activities in the percentage ratio",
+		"suport": {
+			"text": "Organization and provision of technical support.",
+			"title": "Support"
+		},
+		"testing": {
+			"text": "From agile test management to automated continuous testing.",
+			"title": "Testing"
+		},
+		"title": "Ranges"
+	},
+	"working": {
+		"client": {
+			"text": "Work with the client - is the foundation of any business. ...",
+			"title": "Work with the client"
+		},
+		"project": {
+			"text": "For us, thinking about a project is not limited to any framework. ...",
+			"title": "Project thinking"
+		},
+		"subtitle": "Long-term relationship to the client are the basis of our work",
+		"support": {
+			"text": "There comes a time when the project moves from the development and testing stage to the maintenance stage. ...",
+			"title": "Project Support"
+		},
+		"title": "(how we are) Working"
+	}
+}

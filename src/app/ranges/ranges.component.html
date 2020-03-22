@@ -9,14 +9,14 @@
       fxLayoutAlign="center center"
     >
       <div>
-        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">Ranges</h2>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">{{'ranges.title' | translate}}</h2>
       </div>
       <div>
         <h3
           [ngStyle.xs]="{ 'font-size': '18px' }"
           [ngStyle.sm]="{ 'font-size': '22px' }"
         >
-          Activities in the percentage ratio
+        {{'ranges.subtitle' | translate}}
         </h3>
       </div>
     </div>
@@ -43,10 +43,10 @@
           </div>
           <mat-card-content>
             <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
-              Support
+              {{'ranges.suport.title' | translate}}
             </h5>
             <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
-              Organization and provision of technical support.
+              {{'ranges.suport.text' | translate}}
             </p>
           </mat-card-content>
         </mat-card>
@@ -68,10 +68,10 @@
           </div>
           <mat-card-content>
             <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
-              Testing
+              {{'ranges.testing.title' | translate}}
             </h5>
             <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
-              From agile test management to automated continuous testing.
+              {{'ranges.testing.text' | translate}}
             </p>
           </mat-card-content>
         </mat-card>
@@ -93,10 +93,10 @@
           </div>
           <mat-card-content>
             <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
-              Development
+              {{'ranges.development.title' | translate}}
             </h5>
             <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
-              Software development or improvement of existing.
+              {{'ranges.development.text' | translate}}
             </p>
           </mat-card-content>
         </mat-card>

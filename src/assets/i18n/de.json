@@ -1,0 +1,126 @@
+{
+	"about": {
+		"crm": {
+			"text": "Proprietäre Software zur Optimierung der Kundeninteraktion",
+			"title": "Implementierung seines CRM im Jahr 2020"
+		},
+		"software": {
+			"text": "Entwicklung von Programmen nach Kundenwunsch",
+			"title": "Softwareentwicklung seit 2018"
+		},
+		"support": {
+			"text": "Wir bieten technischen Support für fast jedes Projekt",
+			"title": "IT-Support seit 2015"
+		},
+		"test": {
+			"text": "Schreiben einfacher Testfälle für Webanwendungen",
+			"title": "Testmanagement seit 2013"
+		},
+		"text": "über Text",
+		"title": "(kurz) Über uns"
+	},
+	"app": {
+		"about": "Über uns",
+		"contact": "Kontakt",
+		"gallery": "Galerie",
+		"pricing": "Preisgestaltung",
+		"ranges": "BEREICHE",
+		"working": "Arbeiten"
+	},
+	"contact": {
+		"button": "Kontaktiere uns",
+		"enter": {
+			"email": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+			"name": "Bitte geben Sie Ihren Namen ein",
+			"phone": "Bitte geben Sie Ihr Telefon ein"
+		},
+		"error": {
+			"email": "E-Mail ist",
+			"email_valid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+			"name": "Name ist",
+			"phone": "Telefon ist",
+			"required": "Erforderlich"
+		},
+		"placeholder": {
+			"email": "Email",
+			"name": "Name",
+			"phone": "Telefon"
+		},
+		"subtitle": "Lorem ipsum dolor sitzen amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
+		"title": "Kontaktieren Sie uns (im Aufbau: - /)"
+	},
+	"footer": {
+		"subtitle": "Rechtliche Informationen über uns",
+		"title": "--- FUSSZEILE ---"
+	},
+	"gallery": {
+		"subtitle": "(((nicht) einfach) Bilder =)",
+		"title": "Galerie"
+	},
+	"header": {
+		"greeting": "Wir begrüßen Sie"
+	},
+	"pricing": {
+		"development": {
+			"line": {
+				"1": "Neue Projekte",
+				"2": "Reverse Engineering",
+				"3": "Zusammenstellung der Dokumentation"
+			},
+			"price": "ab 55€ pro Stunde",
+			"title": "Entwicklung"
+		},
+		"subtitle": "Der Preis hängt von der Projektspezifität ab",
+		"support": {
+			"line": {
+				"1": "Anfrage bearbeiten",
+				"2": "Angestellten Training\n",
+				"3": "Verfügbarkeit rund um die Uhr"
+			},
+			"price": "ab 30€ pro Stunde",
+			"title": "Unterstützung"
+		},
+		"testing": {
+			"line": {
+				"1": "Funktionell",
+				"2": "Lasttest",
+				"3": "Sicherheit"
+			},
+			"price": "ab 45€ pro Stunde",
+			"title": "Testen"
+		},
+		"title": "Preisgestaltung"
+	},
+	"ranges": {
+		"development": {
+			"text": "Softwareentwicklung oder Verbesserung bestehender.",
+			"title": "Entwicklung"
+		},
+		"subtitle": "Aktivitäten im prozentualen Verhältnis",
+		"suport": {
+			"text": "Organisation und Bereitstellung von technischem Support.",
+			"title": "Unterstützung"
+		},
+		"testing": {
+			"text": "Vom agilen Testmanagement bis zum automatisierten kontinuierlichen Testen.",
+			"title": "Testen"
+		},
+		"title": "BEREICHE"
+	},
+	"working": {
+		"client": {
+			"text": "Arbeit mit dem Kunden - ist die Grundlage jedes Geschäfts. ...",
+			"title": "Arbeiten Sie mit dem Kunden"
+		},
+		"project": {
+			"text": "Für uns ist das Nachdenken über ein Projekt nicht auf einen Rahmen beschränkt. ...",
+			"title": ""
+		},
+		"subtitle": "Langfristige Beziehungen zum Kunden sind die Grundlage unserer Arbeit",
+		"support": {
+			"text": "Es kommt eine Zeit, in der das Projekt von der Entwicklungs- und Testphase in die Wartungsphase übergeht. ...",
+			"title": "Projektunterstützung"
+		},
+		"title": "(wie wir sind) Arbeiten"
+	}
+}

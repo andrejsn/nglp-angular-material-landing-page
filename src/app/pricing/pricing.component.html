@@ -9,14 +9,14 @@
       fxLayoutAlign="center center"
     >
       <div>
-        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">Pricing</h2>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">{{'pricing.title' | translate}}</h2>
       </div>
       <div>
         <h3
           [ngStyle.xs]="{ 'font-size': '18px' }"
           [ngStyle.sm]="{ 'font-size': '22px' }"
         >
-          The price depends on the specific of project
+        {{'pricing.subtitle' | translate}}
         </h3>
       </div>
     </div>
@@ -37,17 +37,17 @@
                 class="material-icons"
                 >headset_mic</i
               >
-              Support
+              {{'pricing.support.title' | translate}}
             </h5>
 
             <mat-divider class="mb-1"></mat-divider>
             <mat-list>
-              <mat-list-item> Request processing </mat-list-item>
-              <mat-list-item> Employee training </mat-list-item>
-              <mat-list-item> Availability 24/7 </mat-list-item>
+              <mat-list-item> {{'pricing.support.line.1' | translate}} </mat-list-item>
+              <mat-list-item> {{'pricing.support.line.2' | translate}} </mat-list-item>
+              <mat-list-item> {{'pricing.support.line.3' | translate}} </mat-list-item>
             </mat-list>
             <mat-divider class="mb-1"></mat-divider>
-            <div class="value">from 30 € per hour</div>
+            <div class="value">{{'pricing.support.price' | translate}}</div>
           </mat-card-content>
         </mat-card>
       </div>
@@ -61,17 +61,17 @@
                 class="material-icons"
                 >bug_report</i
               >
-              Testing
+              {{'pricing.testing.title' | translate}}
             </h5>
 
             <mat-divider class="mb-1"></mat-divider>
             <mat-list>
-              <mat-list-item> Functional</mat-list-item>
-              <mat-list-item> Load testing </mat-list-item>
-              <mat-list-item> Security </mat-list-item>
+              <mat-list-item> {{'pricing.testing.line.1' | translate}}</mat-list-item>
+              <mat-list-item> {{'pricing.testing.line.2' | translate}} </mat-list-item>
+              <mat-list-item> {{'pricing.testing.line.3' | translate}} </mat-list-item>
             </mat-list>
             <mat-divider class="mb-1"></mat-divider>
-            <div class="value">from 45 € per hour</div>
+            <div class="value">{{'pricing.testing.price' | translate}}</div>
           </mat-card-content>
         </mat-card>
       </div>
@@ -85,17 +85,17 @@
                 class="material-icons"
                 >code</i
               >
-              Development
+              {{'pricing.development.title' | translate}}
             </h5>
 
             <mat-divider class="mb-1"></mat-divider>
             <mat-list>
-              <mat-list-item> New projects </mat-list-item>
-              <mat-list-item> Reverse engineering </mat-list-item>
-              <mat-list-item> Compilation of documentation </mat-list-item>
+              <mat-list-item> {{'pricing.development.line.1' | translate}} </mat-list-item>
+              <mat-list-item> {{'pricing.development.line.2' | translate}} </mat-list-item>
+              <mat-list-item> {{'pricing.development.line.3' | translate}} </mat-list-item>
             </mat-list>
             <mat-divider class="mb-1"></mat-divider>
-            <div class="value">from 55 € per hour</div>
+            <div class="value">{{'pricing.development.price' | translate}}</div>
           </mat-card-content>
         </mat-card>
       </div>

@@ -28,7 +28,7 @@ import { LanguageDialogComponent } from './language-dialog/language-dialog.compo
 
 
 export function HttpLoaderFactory(httpClient: HttpClient){
-  return new TranslateHttpLoader(httpClient, environment.production + '/assets/i18n/', '-lang.json');
+  return new TranslateHttpLoader(httpClient);
 }
 
 

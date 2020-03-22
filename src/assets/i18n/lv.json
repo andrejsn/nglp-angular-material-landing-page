@@ -1,0 +1,126 @@
+{
+	"about": {
+		"crm": {
+			"text": "Patentēta programmatūra klientu mijiedarbības optimizēšanai",
+			"title": "CRM ieviešana 2020. gadā"
+		},
+		"software": {
+			"text": "Programmu izstrāde atbilstoši klienta specifikācijām",
+			"title": "Programmatūras izstrāde kopš 2018. gada"
+		},
+		"support": {
+			"text": "Mēs piedāvājam tehnisko atbalstu gandrīz jebkuram projektam",
+			"title": "IT atbalsts kopš 2015. gada"
+		},
+		"test": {
+			"text": "Vienkāršu testa gadījumu rakstīšana tīmekļa lietojumprogrammām",
+			"title": "Pārbaudes vadība kopš 2013. gada"
+		},
+		"text": "par tekstu",
+		"title": "(īsi) Par mums"
+	},
+	"app": {
+		"about": "Par mums",
+		"contact": "Kontaktpersona",
+		"gallery": "Galerija",
+		"pricing": "Cenu noteikšana",
+		"ranges": "Diapazoni",
+		"working": "Strādā"
+	},
+	"contact": {
+		"button": "Sazinies ar mums",
+		"enter": {
+			"email": "Lūdzu, ievadiet savu e-pastu",
+			"name": "Lūdzu, ievadiet savu vārdu",
+			"phone": "Lūdzu, ievadiet savu tālruni"
+		},
+		"error": {
+			"email": "E-pasts ir",
+			"email_valid": "Lūdzu ievadiet derīgu e-pasta adresi",
+			"name": "Vārds ir",
+			"phone": "Telefons ir",
+			"required": "Obligāts"
+		},
+		"placeholder": {
+			"email": "E-pasts",
+			"name": "Nosaukums",
+			"phone": "Tālrunis"
+		},
+		"subtitle": "Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
+		"title": "Sazinieties ar mums (izstrādes stadijā: - /)"
+	},
+	"footer": {
+		"subtitle": "Juridiskā informācija par mums",
+		"title": "--- APAVI ---"
+	},
+	"gallery": {
+		"subtitle": "(((nav) vienkārši) Attēli =)",
+		"title": "Galerija"
+	},
+	"header": {
+		"greeting": "Mēs sveicam jūs"
+	},
+	"pricing": {
+		"development": {
+			"line": {
+				"1": "Jauni projekti",
+				"2": "Reversā inženierija",
+				"3": "Dokumentācijas apkopošana"
+			},
+			"price": "no 55€ stundā",
+			"title": "Attīstība"
+		},
+		"subtitle": "Cena ir atkarīga no projekta specifikas",
+		"support": {
+			"line": {
+				"1": "Pieprasījuma apstrāde",
+				"2": "Darbinieku apmācība\n",
+				"3": "Pieejamība 24/7"
+			},
+			"price": "no 30€ stundā",
+			"title": "Atbalsts"
+		},
+		"testing": {
+			"line": {
+				"1": "Funkcionāls",
+				"2": "Slodzes pārbaude",
+				"3": "Drošība"
+			},
+			"price": "no 45€ stundā",
+			"title": "Pārbaude"
+		},
+		"title": "Cenu noteikšana"
+	},
+	"ranges": {
+		"development": {
+			"text": "Programmatūras izstrāde vai esošās pilnveidošana.",
+			"title": "Attīstība"
+		},
+		"subtitle": "Darbības procentos",
+		"suport": {
+			"text": "Tehniskā atbalsta organizēšana un nodrošināšana.",
+			"title": "Atbalsts"
+		},
+		"testing": {
+			"text": "Sākot ar veiklu testa pārvaldību un beidzot ar automatizētu nepārtrauktu testēšanu.",
+			"title": "Pārbaude"
+		},
+		"title": "Diapazoni"
+	},
+	"working": {
+		"client": {
+			"text": "Darbs ar klientu - ir jebkura biznesa pamats. ...",
+			"title": "Darbs ar klientu"
+		},
+		"project": {
+			"text": "Mums domāt par projektu neaprobežojas tikai ar jebkuru ietvaru. ...",
+			"title": ""
+		},
+		"subtitle": "Ilgtermiņa attiecības ar klientu ir mūsu darba pamatā",
+		"support": {
+			"text": "Pienāk laiks, kad projekts pāriet no izstrādes un testēšanas posma uz apkopes posmu. ...",
+			"title": "Projekta atbalsts"
+		},
+		"title": "(kā mums klājas) Darbs"
+	}
+}

@@ -22,13 +22,9 @@
           [ngStyle.xs]="{ 'font-size': '18px' }"
           [ngStyle.sm]="{ 'font-size': '22px' }"
         >
-          We greet you ツ
+        {{'header.greeting' | translate}}
         </h2>
       </div>
-      <!-- <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn" [class.heading-btn]="isHeadingBtn">
-        		<a class="heading-button-left" mat-flat-button color="accent">Action</a>
-		        <a class="heading-button-right" mat-stroked-button color="accent">Action</a>
-	    	</div> -->
     </div>
   </div>
 </section>

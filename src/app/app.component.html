@@ -2,16 +2,25 @@
       <button fxShow="true" fxShow.gt-xs="false" mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
       <a class="logo" fxShow="false" fxShow.gt-xs="true" href="#"><img class="shadow" src="assets/img/logo.png"></a>
       <mat-nav-list class="navigation-list" fxLayout="row" fxShow="false" fxShow.gt-xs="true">
-          <a mat-list-item href="#about">About us</a>
-          <a mat-list-item href="#working">Working</a>
-          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">Ranges</a>
-          <a mat-list-item href="#pricing">Pricing</a>
-          <a mat-list-item href="#gallery">Gallery</a>
-          <a mat-list-item href="#contact">Contact</a>
+          <a mat-list-item href="#about">{{ 'app.about' | translate}}</a>
+          <a mat-list-item href="#working">{{'app.working' | translate}}</a>
+          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">{{'app.ranges' | translate}}</a>
+          <a mat-list-item href="#pricing">{{'app.pricing' | translate}}</a>
+          <a mat-list-item href="#gallery">{{'app.gallery' | translate}}</a>
+          <a mat-list-item href="#contact">{{'app.contact' | translate}}</a>
       </mat-nav-list>
       <span class="navigation-spacer"></span>
       <button id="contact-fab-button" (click)="openContactDialog()" mat-mini-fab color="primary" matTooltip="Contact Us" [matTooltipPosition]="'left'"><mat-icon>email</mat-icon></button>
-      <button id="language-fab-button" (click)="openLanguageDialog()" mat-mini-fab color="primary" matTooltip="Language" [matTooltipPosition]="'left'"><mat-icon>language</mat-icon></button>
+      <!-- <button id="language-fab-button" (click)="openLanguageDialog()" mat-mini-fab color="primary" matTooltip="Language" [matTooltipPosition]="'left'"><mat-icon>language</mat-icon></button> -->
+      
+      <p></p>
+      <label>
+        
+        <select #langSelect (change)="translate.use(langSelect.value)">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{
+                lang }}</option>
+        </select>
+    </label>
     </mat-toolbar>
 
     <div class="navigation-empty" fxShow="false" fxShow.gt-xs="true"></div>
@@ -22,12 +31,12 @@
                    [fixedInViewport]="mobileQuery.matches" (opened)="setToggleOn()" (closed)="setToggleOff()">
         <mat-nav-list>
           <a id="mobilelogo" class="logo" fxShow="true" fxShow.gt-xs="false" href="#"><img src="assets/img/logo_small.png"></a>
-          <a mat-list-item href="#about">About us</a>
-          <a mat-list-item href="#working">Working</a>
-          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">Ranges</a>
-          <a mat-list-item href="#pricing">Pricing</a>
-          <a mat-list-item href="#gallery">Gallery</a>
-          <a mat-list-item href="#contact">Contact</a>
+          <a mat-list-item href="#about">{{ 'app.about' | translate}}</a>
+          <a mat-list-item href="#working">{{'app.working' | translate}}</a>
+          <a mat-list-item href="#ranges" (click)="ranges.resetRanges()">{{'app.ranges' | translate}}</a>
+          <a mat-list-item href="#pricing">{{'app.pricing' | translate}}</a>
+          <a mat-list-item href="#gallery">{{'app.gallery' | translate}}</a>
+          <a mat-list-item href="#contact">{{'app.contact' | translate}}</a>
         </mat-nav-list>
       </mat-sidenav>
 

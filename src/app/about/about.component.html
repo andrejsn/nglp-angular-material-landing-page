@@ -10,18 +10,14 @@
       fxLayoutAlign="center center"
     >
       <div>
-        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">(briefly) About us</h2>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">{{'about.title' | translate}}</h2>
       </div>
       <div>
         <h3
           [ngStyle.xs]="{ 'font-size': '18px' }"
           [ngStyle.sm]="{ 'font-size': '22px' }"
         >
-          In 2013, we started writing simple computer tests using Selenium. From
-          simple to complex: since 2015 we offer technical support services for
-          our customers. The next stage begins in 2018. We are entering the IT
-          market with our software. Today, our CRM systems optimize customer
-          service.
+        {{'about.text' | translate}}
         </h3>
       </div>
     </div>
@@ -44,10 +40,10 @@
             >
           </div>
           <span fxFlex="30px"></span>
-          <h2 class="about-text">Test management since 2013</h2>
+          <h2 class="about-text">{{'about.test.title' | translate}}</h2>
           <span fxFlex="10px"></span>
           <p class="about-text">
-            Writing simple test cases for web application
+            {{'about.test.text' | translate}}
           </p>
         </div>
       </div>
@@ -64,10 +60,10 @@
             >
           </div>
           <span fxFlex="30px"></span>
-          <h2 class="about-text">IT Support since 2015</h2>
+          <h2 class="about-text">{{'about.support.title' | translate}}</h2>
           <span fxFlex="10px"></span>
           <p class="about-text">
-            We offer technical support for almost any project
+            {{'about.support.text' | translate}}
           </p>
         </div>
       </div>
@@ -84,11 +80,11 @@
             >
           </div>
           <span fxFlex="30px"></span>
-          <h2 class="about-text">Software development since 2018</h2>
+          <h2 class="about-text">{{'about.software.title' | translate}}</h2>
           <span fxFlex="10px"></span>
 
           <p class="about-text">
-            Development of programs according to customer specifications
+            {{'about.software.text' | translate}}
           </p>
         </div>
       </div>
@@ -105,11 +101,11 @@
             >
           </div>
           <span fxFlex="30px"></span>
-          <h2 class="about-text">Implementation of its CRM in 2020</h2>
+          <h2 class="about-text">{{'about.crm.title' | translate}}</h2>
           <span fxFlex="10px"></span>
 
           <p class="about-text">
-            Proprietary software to optimize customer interactions
+            {{'about.crm.text' | translate}}
           </p>
         </div>
       </div>

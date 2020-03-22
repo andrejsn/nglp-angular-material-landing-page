@@ -16,7 +16,7 @@
 			"text": "Writing simple test cases for web application",
 			"title": "Test management since 2013"
 		},
-		"text": "about text",
+		"text": "In 2013, we started writing simple computer tests using Selenium. From simple to complex: since 2015 we offer technical support services for our customers. The next stage begins in 2018. We are entering the IT market with our software. Today, our CRM systems optimize customer service.",
 		"title": "(briefly) About us"
 	},
 	"app": {
@@ -74,7 +74,7 @@
 		"support": {
 			"line": {
 				"1": "Request processing",
-				"2": "Employee training\n",
+				"2": "Employee training",
 				"3": "Availability 24/7"
 			},
 			"price": "from 30€ per hour",
@@ -93,19 +93,19 @@
 	},
 	"ranges": {
 		"development": {
-			"text": "Software development or improvement of existing.",
+			"text": "Development or improvement of software.",
 			"title": "Development"
 		},
-		"subtitle": "Activities in the percentage ratio",
+		"subtitle": "Activities as a percentage",
 		"suport": {
 			"text": "Organization and provision of technical support.",
-			"title": "Support"
+			"title": "Project Support"
 		},
 		"testing": {
-			"text": "From agile test management to automated continuous testing.",
-			"title": "Testing"
+			"text": "Management and implementation of all types of tests in projects.",
+			"title": "Project Testing"
 		},
-		"title": "Ranges"
+		"title": "Spectrum"
 	},
 	"working": {
 		"client": {

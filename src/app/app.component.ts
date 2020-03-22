@@ -50,6 +50,7 @@ export class AppComponent implements OnDestroy {
     translate.setDefaultLang('en');
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang.match(/en|de|lv|ru/) ? browserLang : 'en');
+    translate.use('ru');
   }
 
   public detectScroll(event: SE) {

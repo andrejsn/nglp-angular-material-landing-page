@@ -23,7 +23,7 @@
 		"about": "Par mums",
 		"contact": "Kontaktpersona",
 		"gallery": "Galerija",
-		"pricing": "Cenu noteikšana",
+		"pricing": "Likmes",
 		"ranges": "Diapazoni",
 		"working": "Strādā"
 	},
@@ -74,11 +74,11 @@
 		"support": {
 			"line": {
 				"1": "Pieprasījuma apstrāde",
-				"2": "Darbinieku apmācība\n",
+				"2": "Personāla apmācība",
 				"3": "Pieejamība 24/7"
 			},
 			"price": "no 30€ stundā",
-			"title": "Atbalsts"
+			"title": "Suports"
 		},
 		"testing": {
 			"line": {
@@ -93,19 +93,19 @@
 	},
 	"ranges": {
 		"development": {
-			"text": "Programmatūras izstrāde vai esošās pilnveidošana.",
-			"title": "Attīstība"
+			"text": "Programmatūras izstrāde vai uzlabošana.",
+			"title": "Programmēšana"
 		},
 		"subtitle": "Darbības procentos",
 		"suport": {
 			"text": "Tehniskā atbalsta organizēšana un nodrošināšana.",
-			"title": "Atbalsts"
+			"title": "Projekta atbalsts"
 		},
 		"testing": {
-			"text": "Sākot ar veiklu testa pārvaldību un beidzot ar automatizētu nepārtrauktu testēšanu.",
-			"title": "Pārbaude"
+			"text": "Visu veidu testu vadība un ieviešana projektos.",
+			"title": "Projekta pārbaude"
 		},
-		"title": "Diapazoni"
+		"title": "Spektrs"
 	},
 	"working": {
 		"client": {

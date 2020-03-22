@@ -23,7 +23,7 @@
 		"about": "Über uns",
 		"contact": "Kontakt",
 		"gallery": "Galerie",
-		"pricing": "Preisgestaltung",
+		"pricing": "Preise",
 		"ranges": "BEREICHE",
 		"working": "Arbeiten"
 	},
@@ -74,11 +74,11 @@
 		"support": {
 			"line": {
 				"1": "Anfrage bearbeiten",
-				"2": "Angestellten Training\n",
+				"2": "Angestellten Training",
 				"3": "Verfügbarkeit rund um die Uhr"
 			},
 			"price": "ab 30€ pro Stunde",
-			"title": "Unterstützung"
+			"title": "Support"
 		},
 		"testing": {
 			"line": {
@@ -93,19 +93,19 @@
 	},
 	"ranges": {
 		"development": {
-			"text": "Softwareentwicklung oder Verbesserung bestehender.",
+			"text": "Entwicklung oder Verbesserung von Software.",
 			"title": "Entwicklung"
 		},
-		"subtitle": "Aktivitäten im prozentualen Verhältnis",
+		"subtitle": "Aktivitäten in Prozent",
 		"suport": {
 			"text": "Organisation und Bereitstellung von technischem Support.",
-			"title": "Unterstützung"
+			"title": "Projektunterstützung"
 		},
 		"testing": {
-			"text": "Vom agilen Testmanagement bis zum automatisierten kontinuierlichen Testen.",
-			"title": "Testen"
+			"text": "Management und Implementierung aller Arten von Tests in Projekten.",
+			"title": "Projekttests"
 		},
-		"title": "BEREICHE"
+		"title": "Spektrum"
 	},
 	"working": {
 		"client": {

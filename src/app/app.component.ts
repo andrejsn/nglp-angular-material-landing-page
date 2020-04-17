@@ -67,13 +67,13 @@ export class AppComponent implements OnDestroy {
   }
 
   openContactDialog(): void {
-    const dialogRef = this.dialog.open(ContactDialogComponent, {
+    const contactDialogRef = this.dialog.open(ContactDialogComponent, {
       width: "250px"
     });
   }
 
   openLanguageDialog(): void {
-    const dialogRef = this.dialog.open(LanguageDialogComponent, {
+    const languageDialogRef = this.dialog.open(LanguageDialogComponent, {
       width: "250px"
     });
   }

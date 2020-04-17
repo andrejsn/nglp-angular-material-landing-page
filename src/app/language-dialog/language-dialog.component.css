@@ -1,8 +1,9 @@
 ::ng-deep .mat-select-content {
-  background-color: #ff6d00c7;
+  background-color: #ffe0b2;
   font-size: 1.2em;
 }
 
 ::ng-deep .mat-select-value {
+  background-color: #ffe0b2;
   font-size: 1.5em;
 }

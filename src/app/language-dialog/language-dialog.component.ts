@@ -14,4 +14,8 @@ export class LanguageDialogComponent implements OnInit {
   ) {}
 
   ngOnInit() {}
+
+  dialogOff(): void {
+    this.dialogRef.close();
+  }
 }

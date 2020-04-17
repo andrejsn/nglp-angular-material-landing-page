@@ -1,6 +1,6 @@
 <div>
   <mat-form-field>
-    <mat-select placeholder="Language" [ngModel]="translate.currentLang" (selectionChange)="translate.use($event.value)">
+    <mat-select placeholder="Language" [ngModel]="translate.currentLang" (selectionChange)="translate.use($event.value); dialogOff()">
         <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang">
             {{ lang }}
         </mat-option>

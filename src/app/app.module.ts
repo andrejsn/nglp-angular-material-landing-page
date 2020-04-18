@@ -7,10 +7,10 @@ import { DirectivesModule } from "./directives/directives.module";
 import { Material2Module } from "./material2.module";
 import { MatSelectModule } from "@angular/material";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
-import {Angular2ImageGalleryModule} from "angular2-image-gallery";
+import { Angular2ImageGalleryModule } from "angular2-image-gallery";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpClientModule, HttpClientXsrfModule } from "@angular/common/http";
 import { environment } from "src/environments/environment";
 
 import { AppComponent } from "./app.component";
@@ -28,7 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LanguageDialogComponent } from './language-dialog/language-dialog.component'
 
 
-export function HttpLoaderFactory(httpClient: HttpClient){
+export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
 
@@ -46,10 +46,15 @@ export function HttpLoaderFactory(httpClient: HttpClient){
     WorkingComponent,
     RangesComponent,
     GalleryComponent,
-    FooterComponent,  
-    LanguageDialogComponent,      
+    FooterComponent,
+    LanguageDialogComponent,
   ],
   imports: [
+    HttpClientModule,
+    HttpClientXsrfModule.withOptions({
+      cookieName: 'XSRF-TOKEN', // this is optional
+      //headerName: 'My-Xsrf-Header' // this is optional
+    }),
     BrowserModule,
     Material2Module,
     MatSelectModule,
@@ -71,4 +76,4 @@ export function HttpLoaderFactory(httpClient: HttpClient){
   entryComponents: [ContactDialogComponent, LanguageDialogComponent,],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

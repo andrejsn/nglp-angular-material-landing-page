@@ -9,7 +9,7 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy, Inject, OnInit } from '@angular/core';
 import { SE } from './directives/scroll.directive';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 import { LanguageDialogComponent} from './language-dialog/language-dialog.component';
 import { DOCUMENT } from '@angular/common';

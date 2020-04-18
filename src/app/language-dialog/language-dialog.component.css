@@ -1,9 +1,13 @@
 ::ng-deep .mat-select-content {
-  background-color: #ffe0b2;
+  background-color: #f57c00;
   font-size: 1.2em;
 }
 
 ::ng-deep .mat-select-value {
-  background-color: #ffe0b2;
+  background-color: #f57c00;
   font-size: 1.5em;
+}
+
+::ng-deep .mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+ background-color: #f57c00; 
 }

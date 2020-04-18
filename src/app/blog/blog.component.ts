@@ -14,7 +14,7 @@ export class BlogComponent implements OnInit {
 
  	jQuery(function($){
 
- 			let owl = $('.owl-carousel');
+ 			let owl = (<any>$('.owl-carousel'));
 
 		 	owl.owlCarousel({
 		    margin:10,

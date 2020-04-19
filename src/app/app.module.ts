@@ -10,15 +10,16 @@ import { RoundProgressModule } from "angular-svg-round-progressbar";
 import { Angular2ImageGalleryModule } from "angular2-image-gallery";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient, HttpClientModule, HttpClientXsrfModule } from "@angular/common/http";
+import { HttpClient, HttpClientModule, HttpClientXsrfModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { environment } from "src/environments/environment";
 
 import { AppComponent } from "./app.component";
-import { PortfolioComponent } from "./portfolio/portfolio.component";
-import { AboutComponent } from "./about/about.component";
+
 import { HeadingComponent } from "./heading/heading.component";
+// import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { AboutComponent } from "./about/about.component";
 import { PricingComponent } from "./pricing/pricing.component";
-import { BlogComponent } from "./blog/blog.component";
+// import { BlogComponent } from "./blog/blog.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ContactDialogComponent } from "./contact-dialog/contact-dialog.component";
 import { WorkingComponent } from "./working/working.component";
@@ -27,6 +28,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { LanguageDialogComponent } from './language-dialog/language-dialog.component'
 
+import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -36,11 +38,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent,
+    // PortfolioComponent,
     AboutComponent,
     HeadingComponent,
     PricingComponent,
-    BlogComponent,
+    // BlogComponent,
     ContactComponent,
     ContactDialogComponent,
     WorkingComponent,
@@ -50,12 +52,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LanguageDialogComponent,
   ],
   imports: [
-    HttpClientModule,
-    HttpClientXsrfModule.withOptions({
-      cookieName: 'XSRF-TOKEN', // this is optional
-      //headerName: 'My-Xsrf-Header' // this is optional
-    }),
     BrowserModule,
+    SnotifyModule,
     Material2Module,
     MatSelectModule,
     FlexLayoutModule,
@@ -72,7 +70,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     }),
   ],
-  providers: [],
+  providers: [{ provide: 'SnotifyToastConfig', useValue: ToastDefaults},  SnotifyService],
   entryComponents: [ContactDialogComponent, LanguageDialogComponent,],
   bootstrap: [AppComponent]
 })

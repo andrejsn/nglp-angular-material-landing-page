@@ -16,11 +16,6 @@ export class NgLpErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
-export interface DialogData {
-  animal: string;
-  name: string;
-}
-
 @Component({
   selector: 'app-contact-dialog',
   templateUrl: './contact-dialog.component.html',
@@ -41,6 +36,8 @@ export class ContactDialogComponent implements OnInit {
     Validators.email,
   ]);
 
+  checkFormControl = new FormControl();
+
   matcher = new NgLpErrorStateMatcher();
 
   contact: Contact;
@@ -48,8 +45,8 @@ export class ContactDialogComponent implements OnInit {
   constructor(
     private contactService: ContactService,
     public dialogRef: MatDialogRef<ContactDialogComponent>,
-    private snotifyService: SnotifyService,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+    private snotifyService: SnotifyService
+    ) { }
 
   ngOnInit(): void {
 
@@ -69,14 +66,36 @@ export class ContactDialogComponent implements OnInit {
   }
 
   dialogOff(): void {
+
+
+    console.log(this.dialogRef.getState());
+    
+
     this.dialogRef.close();
+
+    console.log(this.dialogRef.getState());
+    
   }
 
-  onSubmit() {
+  submit() {
 
+    if((this.dialogRef.getState() === 0) && ( this.nameFormControl.errors || this.phoneFormControl.errors || this.emailFormControl.errors )){
+      this.snotifyService.error('ERROR !');
+
+      return;
+    }
+    
     console.log("FORM SEND");
+    console.log(this.nameFormControl.value);
+    console.log(this.phoneFormControl.value);
+    console.log(this.emailFormControl.value);
+    console.log(this.contact.csrf);
+   
+    
 
-    this.snotifyService.info('send form')
+
+
+    this.snotifyService.info('OK')
 
 
 
@@ -92,5 +111,18 @@ export class ContactDialogComponent implements OnInit {
       )
 
   }
+
+
+  private shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+ }
+   
+ 
+
+
 
 }

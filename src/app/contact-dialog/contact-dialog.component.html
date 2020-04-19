@@ -1,6 +1,6 @@
-<form class="formwidth" (ngSubmit)="onSubmit()">
+
   <div>
-    <h5 class="contact-dialog-title mat-title">Contact Us:</h5>
+    <h5 class="contact-dialog-title mat-title">{{'contact.title' | translate}}</h5>
 
     <mat-form-field appearance="outline" color="accent">
       <mat-label>{{'contact.enter.name' | translate}} </mat-label>
@@ -49,10 +49,13 @@
       </mat-error>
     </mat-form-field>
 
-    <br />
 
-    <div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">
-      <button class="left-button" mat-fab color="primary" type="submit">
+
+
+
+
+    <div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">      
+      <button  class="left-button" mat-fab color="primary" (click)="submit()">
         <mat-icon>done</mat-icon>
       </button>
       <button
@@ -65,4 +68,4 @@
       </button>
     </div>
   </div>
-</form>
+

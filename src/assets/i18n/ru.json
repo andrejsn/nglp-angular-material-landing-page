@@ -35,10 +35,10 @@
 			"phone": "Пожалуйста, введите ваш телефон"
 		},
 		"error": {
-			"email": "Электронная почта это",
+			"email": "Электронная почта - это",
 			"email_valid": "Пожалуйста, введите действительный адрес электронной почты",
-			"name": "Имя это",
-			"phone": "Телефон это",
+			"name": "Имя - это",
+			"phone": "Телефон - это",
 			"required": "необходимо"
 		},
 		"placeholder": {
@@ -47,7 +47,7 @@
 			"phone": "Телефон"
 		},
 		"subtitle": "Lorem Ipsum Dolor Sit Conmetur Adipicing Elit. Doloribus numquam quis.",
-		"title": "Свяжитесь с нами (в разработке: - /)"
+		"title": "Свяжитесь с нами"
 	},
 	"footer": {
 		"subtitle": "Правовая информация о нас",

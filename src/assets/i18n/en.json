@@ -28,6 +28,7 @@
 		"working": "Working"
 	},
 	"contact": {
+		
 		"button": "Contact Us",
 		"enter": {
 			"email": "Please enter your email",
@@ -47,7 +48,7 @@
 			"phone": "Phone"
 		},
 		"subtitle": "Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
-		"title": "Contact Us (under construction :-/)"
+		"title": "Contact Us"
 	},
 	"footer": {
 		"subtitle": "Legal information about us",

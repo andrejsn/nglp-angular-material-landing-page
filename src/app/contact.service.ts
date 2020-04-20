@@ -12,10 +12,17 @@ export class ContactService {
 
   /**
    * say 
-   * hello to server
+   * hello to server, get csrf token
    */
   hello() {
     return this.http.get<any>(`${environment.apiUrl}/hello`);
+  }
+
+  /**
+   * get ip
+   */
+  ip(){
+    this.http.get<any>(`https://api6.ipify.org?format=json`);
   }
 
   /**

@@ -59,7 +59,7 @@ export class ContactComponent implements OnInit {
     if (this.contactFormGroup.get('nameFormControl').errors ||
       this.contactFormGroup.get('phoneFormControl').errors ||
       this.contactFormGroup.get('emailFormControl').errors) {
-      this.snotifyService.error('ERROR !');
+      this.snotifyService.error('');
       return;
     }
 
@@ -73,7 +73,7 @@ export class ContactComponent implements OnInit {
 
     console.log("FORM SEND");
 
-    this.snotifyService.info('OK');
+    this.snotifyService.success('');
 
     this.reset();
   }

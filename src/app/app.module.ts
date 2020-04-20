@@ -11,8 +11,7 @@ import { Angular2ImageGalleryModule } from "angular2-image-gallery";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule, HttpClientXsrfModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { environment } from "src/environments/environment";
-
+import { NgHttpLoaderModule } from 'ng-http-loader'; 
 import { AppComponent } from "./app.component";
 
 import { HeadingComponent } from "./heading/heading.component";
@@ -53,6 +52,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    NgHttpLoaderModule,
     SnotifyModule,
     Material2Module,
     MatSelectModule,

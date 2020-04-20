@@ -1,71 +1,43 @@
+<div>
+  <h5 class="contact-dialog-title mat-title">{{'contact.title' | translate}}</h5>
 
-  <div>
-    <h5 class="contact-dialog-title mat-title">{{'contact.title' | translate}}</h5>
+  <mat-form-field appearance="outline" color="accent">
+    <mat-label>{{'contact.enter.name' | translate}} </mat-label>
+    <input matInput placeholder="{{'contact.placeholder.name' | translate}}" [formControl]="nameFormControl"
+      [errorStateMatcher]="matcher" />
+    <mat-error *ngIf="nameFormControl.hasError('required')">
+      {{'contact.error.name' | translate}} <strong>{{'contact.error.required' | translate}}</strong>
+    </mat-error>
+  </mat-form-field>
 
-    <mat-form-field appearance="outline" color="accent">
-      <mat-label>{{'contact.enter.name' | translate}} </mat-label>
-      <input
-        matInput
-        placeholder="{{'contact.placeholder.name' | translate}}"
-        [formControl]="nameFormControl"
-        [errorStateMatcher]="matcher"
-      />
-      <mat-error *ngIf="nameFormControl.hasError('required')">
-        {{'contact.error.name' | translate}} <strong>{{'contact.error.required' | translate}}</strong>
-      </mat-error>
-    </mat-form-field>
+  <mat-form-field appearance="outline" color="accent">
+    <mat-label>{{'contact.enter.phone' | translate}} </mat-label>
+    <input matInput placeholder="Phone" [formControl]="phoneFormControl" [errorStateMatcher]="matcher" />
+    <mat-error *ngIf="phoneFormControl.hasError('required')">
+      {{'contact.error.phone' | translate}} <strong>{{'contact.error.required' | translate}}</strong>
+    </mat-error>
+  </mat-form-field>
 
-    <mat-form-field appearance="outline" color="accent">
-      <mat-label>{{'contact.enter.phone' | translate}} </mat-label>
-      <input
-        matInput
-        placeholder="Phone"
-        [formControl]="phoneFormControl"
-        [errorStateMatcher]="matcher"
-      />
-      <mat-error *ngIf="phoneFormControl.hasError('required')">
-        {{'contact.error.phone' | translate}} <strong>{{'contact.error.required' | translate}}</strong>
-      </mat-error>
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" color="accent">
-      <mat-label>{{'contact.enter.email' | translate}}  </mat-label>
-      <input
-        matInput
-        placeholder="Email"
-        [formControl]="emailFormControl"
-        [errorStateMatcher]="matcher"
-      />
-      <mat-error
-        *ngIf="
+  <mat-form-field appearance="outline" color="accent">
+    <mat-label>{{'contact.enter.email' | translate}} </mat-label>
+    <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher" />
+    <mat-error *ngIf="
           emailFormControl.hasError('email') &&
           !emailFormControl.hasError('required')
-        "
-      >
+        ">
       {{'contact.error.email_valid' | translate}}
-      </mat-error>
-      <mat-error *ngIf="emailFormControl.hasError('required')">
-        {{'contact.error.email' | translate}}  <strong>{{'contact.error.required' | translate}}</strong>
-      </mat-error>
-    </mat-form-field>
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      {{'contact.error.email' | translate}} <strong>{{'contact.error.required' | translate}}</strong>
+    </mat-error>
+  </mat-form-field>
 
-
-
-
-
-
-    <div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">      
-      <button  class="left-button" mat-fab color="primary" (click)="submit()">
-        <mat-icon>done</mat-icon>
-      </button>
-      <button
-        class="right-button"
-        mat-fab
-        color="primary"
-        (click)="dialogOff()"
-      >
-        <mat-icon>clear</mat-icon>
-      </button>
-    </div>
+  <div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">
+    <button class="left-button" mat-fab color="primary" (click)="submit()">
+      <mat-icon>done</mat-icon>
+    </button>
+    <button class="right-button" mat-fab color="primary" (click)="dialogOff()">
+      <mat-icon>clear</mat-icon>
+    </button>
   </div>
-
+</div>

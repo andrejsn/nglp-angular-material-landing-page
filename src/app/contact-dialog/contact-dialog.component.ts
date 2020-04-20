@@ -52,6 +52,19 @@ export class ContactDialogComponent implements OnInit {
 
     this.contact = new Contact();
 
+    this.contactService.ip()
+      .pipe(first())
+      .subscribe(
+        data => {
+          console.log(data);
+
+          this.contact.ip = data['ip'];
+        },
+        error => { 
+          this.contact.ip = 'an error occurred'
+        }
+      )
+    
     this.contactService.hello()
       .pipe(first())
       .subscribe(
@@ -60,46 +73,37 @@ export class ContactDialogComponent implements OnInit {
 
           this.contact.csrf = data['csrf_token'];
         },
-        error => { }
+        error => { 
+          this.contact.csrf = 'an error occurred';
+        }
       )
 
   }
 
   dialogOff(): void {
-
-
-    console.log(this.dialogRef.getState());
-    
-
-    this.dialogRef.close();
-
-    console.log(this.dialogRef.getState());
-    
+    this.dialogRef.close();    
   }
 
   submit() {
 
     if((this.dialogRef.getState() === 0) && ( this.nameFormControl.errors || this.phoneFormControl.errors || this.emailFormControl.errors )){
-      this.snotifyService.error('ERROR !');
+      this.snotifyService.error('');
 
       return;
     }
     
+    this.contact.name = this.nameFormControl.value;
+    this.contact.phone = this.phoneFormControl.value;
+    this.contact.email = this.emailFormControl.value;
+
+
     console.log("FORM SEND");
-    console.log(this.nameFormControl.value);
-    console.log(this.phoneFormControl.value);
-    console.log(this.emailFormControl.value);
-    console.log(this.contact.csrf);
-   
-    
+
+    this.snotifyService.success('');
 
 
 
-    this.snotifyService.info('OK')
-
-
-
-    this.contactService.contact()
+    this.contactService.contact(this.contact)
       .pipe(first())
       .subscribe(
         data => {

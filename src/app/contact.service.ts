@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from 'src/environments/environment';
+import { Contact } from './contact/contact';
 
 
 @Injectable({
@@ -22,16 +23,16 @@ export class ContactService {
    * get ip
    */
   ip(){
-    this.http.get<any>(`https://api6.ipify.org?format=json`);
+    return this.http.get<any>(`https://api6.ipify.org?format=json`);
   }
 
   /**
    * up contact to server
    */
-  contact() {
+  contact(contact: Contact) {
     return this.http.post<any>(`${environment.apiUrl}/contact`,
       {
-
+        contact
       }
     );
   }

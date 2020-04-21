@@ -46,87 +46,87 @@ export class ContactDialogComponent implements OnInit {
     private contactService: ContactService,
     public dialogRef: MatDialogRef<ContactDialogComponent>,
     private snotifyService: SnotifyService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-
     this.contact = new Contact();
 
+    // first get ip
     this.contactService.ip()
       .pipe(first())
       .subscribe(
         data => {
-          console.log(data);
-
+          // console.log(data);
           this.contact.ip = data['ip'];
+          // get csrf
+          this.contactService.hello(this.contact.ip)
+            .pipe(first())
+            .subscribe(
+              data => {
+                // console.log(data);
+                this.contact.csrf = data['csrf'];
+              },
+              error => {
+                this.contact.csrf = 'an error occurred: ' + error;
+                this.snotifyService.error('');
+                this.dialogOff();
+              }
+            )
         },
-        error => { 
-          this.contact.ip = 'an error occurred'
+        error => {
+          this.contact.ip = 'an error occurred: ' + error;
         }
       )
-    
-    this.contactService.hello()
-      .pipe(first())
-      .subscribe(
-        data => {
-          console.log(data);
-
-          this.contact.csrf = data['csrf_token'];
-        },
-        error => { 
-          this.contact.csrf = 'an error occurred';
-        }
-      )
-
   }
 
-  dialogOff(): void {
-    this.dialogRef.close();    
-  }
-
+  /**
+   * send contact form to  server
+   */
   submit() {
 
-    if((this.dialogRef.getState() === 0) && ( this.nameFormControl.errors || this.phoneFormControl.errors || this.emailFormControl.errors )){
+    if (
+      (this.dialogRef.getState() === 0) &&
+      (
+        this.nameFormControl.errors ||
+        this.phoneFormControl.errors ||
+        this.emailFormControl.errors
+      )
+    ) {
       this.snotifyService.error('');
 
       return;
     }
-    
+
     this.contact.name = this.nameFormControl.value;
     this.contact.phone = this.phoneFormControl.value;
     this.contact.email = this.emailFormControl.value;
 
-
-    console.log("FORM SEND");
-
-    this.snotifyService.success('');
-
-
+    //console.log("FORM SEND");
 
     this.contactService.contact(this.contact)
       .pipe(first())
       .subscribe(
         data => {
-          console.log(data);
+          // console.log(data);
+          if (data['error']) {
+            this.snotifyService.error(data['error']);
+          } else {
+            this.snotifyService.success('');
+            // close dialog
+            this.dialogOff();
+          }
         },
         error => {
-          console.log(error);
+          // console.log(error);
+          this.snotifyService.error('');
         }
       )
-
   }
 
-
-  private shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
- }
-   
- 
-
-
-
+  /**
+   * close contact dialog
+   */
+  dialogOff(): void {
+    this.dialogRef.close();
+  }
 }

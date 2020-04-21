@@ -15,8 +15,8 @@ export class ContactService {
    * say 
    * hello to server, get csrf token
    */
-  hello() {
-    return this.http.get<any>(`${environment.apiUrl}/hello`);
+  hello(ip: string) {
+    return this.http.get<any>(`${environment.apiUrl}/hello/` + ip);
   }
 
   /**

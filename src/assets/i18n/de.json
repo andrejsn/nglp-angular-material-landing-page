@@ -32,7 +32,9 @@
 		"enter": {
 			"email": "Bitte geben Sie Ihre E-Mail-Adresse ein",
 			"name": "Bitte geben Sie Ihren Namen ein",
-			"phone": "Bitte geben Sie Ihr Telefon ein"
+			"phone": "Bitte geben Sie Ihr Telefon ein",
+			"message": "Bitte hinterlassen Sie eine Nachricht für uns",
+			"robot": "Ich bin kein Roboter ツ"
 		},
 		"error": {
 			"email": "E-Mail ist",
@@ -46,12 +48,12 @@
 			"name": "Name",
 			"phone": "Telefon"
 		},
-		"subtitle": "Lorem ipsum dolor sitzen amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
+		"subtitle": "wir werden uns schnellstmöglich bei Ihnen melden",
 		"title": "Kontaktieren Sie uns"
 	},
 	"footer": {
-		"subtitle": "Rechtliche Informationen über uns",
-		"title": "--- FUSSZEILE ---"
+		"subtitle": "(auf lettisch)",
+		"title": "Rechtliche Informationen über uns"
 	},
 	"gallery": {
 		"subtitle": "(((nicht) einfach) Bilder =)",

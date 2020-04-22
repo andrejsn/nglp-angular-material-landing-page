@@ -33,7 +33,9 @@
 		"enter": {
 			"email": "Please enter your email",
 			"name": "Please enter your name",
-			"phone": "Please enter your phone"
+			"phone": "Please enter your phone",
+			"message": "Please leave a message for us",
+			"robot": "I'm not a robot ツ"
 		},
 		"error": {
 			"email": "Email is",
@@ -47,12 +49,12 @@
 			"name": "Name",
 			"phone": "Phone"
 		},
-		"subtitle": "Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.",
+		"subtitle": "leave your contact details",
 		"title": "Contact Us"
 	},
 	"footer": {
-		"subtitle": "Legal information about us",
-		"title": "--- FOOTER ---"
+		"subtitle": "(in Latvian)",
+		"title": "Legal information about us"
 	},
 	"gallery": {
 		"subtitle": "(((not) simple) Pictures =)",

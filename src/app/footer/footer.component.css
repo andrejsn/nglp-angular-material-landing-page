@@ -21,3 +21,8 @@
 .footer-heading h3{
   font-size: 22px;
 }
+
+.lv-flag-image {
+  background-image: url('../../assets/images/Latvia-Flag.gif');
+  background-size: cover;
+}
